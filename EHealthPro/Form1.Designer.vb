@@ -28,17 +28,20 @@ Partial Class Form1
         Button4 = New Button()
         Button3 = New Button()
         Button2 = New Button()
+        Button5 = New Button()
         GroupBox1.SuspendLayout()
         SuspendLayout()
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(81, 207)
+        Button1.BackColor = SystemColors.ActiveCaption
+        Button1.FlatStyle = FlatStyle.Popup
+        Button1.Location = New Point(94, 172)
         Button1.Name = "Button1"
-        Button1.Size = New Size(146, 44)
+        Button1.Size = New Size(158, 44)
         Button1.TabIndex = 0
         Button1.Text = "Jadwal Praktik"
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' Label1
         ' 
@@ -46,9 +49,9 @@ Partial Class Form1
         Label1.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(222, 28)
         Label1.Name = "Label1"
-        Label1.Size = New Size(193, 31)
+        Label1.Size = New Size(195, 31)
         Label1.TabIndex = 1
-        Label1.Text = "Klinik Kesehatan"
+        Label1.Text = "Medicare+ Clinic"
         Label1.TextAlign = ContentAlignment.TopCenter
         ' 
         ' GroupBox1
@@ -61,7 +64,7 @@ Partial Class Form1
         GroupBox1.Size = New Size(282, 270)
         GroupBox1.TabIndex = 2
         GroupBox1.TabStop = False
-        GroupBox1.Text = "Fasilitas"
+        GroupBox1.Text = "Kalkulator Kesehatan"
         GroupBox1.UseWaitCursor = True
         ' 
         ' Button4
@@ -94,11 +97,23 @@ Partial Class Form1
         Button2.UseVisualStyleBackColor = True
         Button2.UseWaitCursor = True
         ' 
+        ' Button5
+        ' 
+        Button5.BackColor = SystemColors.ActiveCaption
+        Button5.FlatStyle = FlatStyle.Popup
+        Button5.Location = New Point(94, 239)
+        Button5.Name = "Button5"
+        Button5.Size = New Size(158, 44)
+        Button5.TabIndex = 3
+        Button5.Text = "Pendaftaran Pasien"
+        Button5.UseVisualStyleBackColor = False
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(633, 403)
+        Controls.Add(Button5)
         Controls.Add(GroupBox1)
         Controls.Add(Label1)
         Controls.Add(Button1)
@@ -115,5 +130,6 @@ Partial Class Form1
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents Button5 As Button
 
 End Class
