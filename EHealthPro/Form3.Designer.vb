@@ -23,43 +23,44 @@ Partial Class Form3
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         GroupBox1 = New GroupBox()
-        RadioButton3 = New RadioButton()
-        RadioButton2 = New RadioButton()
-        RadioButton1 = New RadioButton()
+        radioHigh = New RadioButton()
+        radioMedium = New RadioButton()
+        radioLow = New RadioButton()
         Label8 = New Label()
-        ComboBox1 = New ComboBox()
+        cmbGender = New ComboBox()
         Label7 = New Label()
         Label6 = New Label()
         Label5 = New Label()
         Label4 = New Label()
         Label3 = New Label()
-        TextBox3 = New TextBox()
+        txtHeight = New TextBox()
         Label2 = New Label()
-        TextBox2 = New TextBox()
-        TextBox1 = New TextBox()
+        txtWeight = New TextBox()
+        txtAge = New TextBox()
         Label1 = New Label()
-        Button2 = New Button()
-        Button1 = New Button()
-        ListView1 = New ListView()
+        listResults = New ListBox()
+        btnPrint = New Button()
+        btnReset = New Button()
+        btnCount = New Button()
         GroupBox1.SuspendLayout()
         SuspendLayout()
         ' 
         ' GroupBox1
         ' 
-        GroupBox1.Controls.Add(RadioButton3)
-        GroupBox1.Controls.Add(RadioButton2)
-        GroupBox1.Controls.Add(RadioButton1)
+        GroupBox1.Controls.Add(radioHigh)
+        GroupBox1.Controls.Add(radioMedium)
+        GroupBox1.Controls.Add(radioLow)
         GroupBox1.Controls.Add(Label8)
-        GroupBox1.Controls.Add(ComboBox1)
+        GroupBox1.Controls.Add(cmbGender)
         GroupBox1.Controls.Add(Label7)
         GroupBox1.Controls.Add(Label6)
         GroupBox1.Controls.Add(Label5)
         GroupBox1.Controls.Add(Label4)
         GroupBox1.Controls.Add(Label3)
-        GroupBox1.Controls.Add(TextBox3)
+        GroupBox1.Controls.Add(txtHeight)
         GroupBox1.Controls.Add(Label2)
-        GroupBox1.Controls.Add(TextBox2)
-        GroupBox1.Controls.Add(TextBox1)
+        GroupBox1.Controls.Add(txtWeight)
+        GroupBox1.Controls.Add(txtAge)
         GroupBox1.Controls.Add(Label1)
         GroupBox1.Location = New Point(12, 12)
         GroupBox1.Name = "GroupBox1"
@@ -68,38 +69,38 @@ Partial Class Form3
         GroupBox1.TabStop = False
         GroupBox1.Text = "Masukkan data"
         ' 
-        ' RadioButton3
+        ' radioHigh
         ' 
-        RadioButton3.AutoSize = True
-        RadioButton3.Location = New Point(138, 225)
-        RadioButton3.Name = "RadioButton3"
-        RadioButton3.Size = New Size(72, 24)
-        RadioButton3.TabIndex = 26
-        RadioButton3.TabStop = True
-        RadioButton3.Text = "Tinggi"
-        RadioButton3.UseVisualStyleBackColor = True
+        radioHigh.AutoSize = True
+        radioHigh.Location = New Point(138, 225)
+        radioHigh.Name = "radioHigh"
+        radioHigh.Size = New Size(72, 24)
+        radioHigh.TabIndex = 26
+        radioHigh.TabStop = True
+        radioHigh.Text = "Tinggi"
+        radioHigh.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton2
+        ' radioMedium
         ' 
-        RadioButton2.AutoSize = True
-        RadioButton2.Location = New Point(138, 195)
-        RadioButton2.Name = "RadioButton2"
-        RadioButton2.Size = New Size(80, 24)
-        RadioButton2.TabIndex = 25
-        RadioButton2.TabStop = True
-        RadioButton2.Text = "Sedang"
-        RadioButton2.UseVisualStyleBackColor = True
+        radioMedium.AutoSize = True
+        radioMedium.Location = New Point(138, 195)
+        radioMedium.Name = "radioMedium"
+        radioMedium.Size = New Size(80, 24)
+        radioMedium.TabIndex = 25
+        radioMedium.TabStop = True
+        radioMedium.Text = "Sedang"
+        radioMedium.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton1
+        ' radioLow
         ' 
-        RadioButton1.AutoSize = True
-        RadioButton1.Location = New Point(138, 165)
-        RadioButton1.Name = "RadioButton1"
-        RadioButton1.Size = New Size(80, 24)
-        RadioButton1.TabIndex = 24
-        RadioButton1.TabStop = True
-        RadioButton1.Text = "Rendah"
-        RadioButton1.UseVisualStyleBackColor = True
+        radioLow.AutoSize = True
+        radioLow.Location = New Point(138, 165)
+        radioLow.Name = "radioLow"
+        radioLow.Size = New Size(80, 24)
+        radioLow.TabIndex = 24
+        radioLow.TabStop = True
+        radioLow.Text = "Rendah"
+        radioLow.UseVisualStyleBackColor = True
         ' 
         ' Label8
         ' 
@@ -110,13 +111,14 @@ Partial Class Form3
         Label8.TabIndex = 23
         Label8.Text = "Tingkat Aktivitas"
         ' 
-        ' ComboBox1
+        ' cmbGender
         ' 
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(138, 128)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(229, 28)
-        ComboBox1.TabIndex = 16
+        cmbGender.FormattingEnabled = True
+        cmbGender.Items.AddRange(New Object() {"Laki-laki", "Perempuan"})
+        cmbGender.Location = New Point(138, 128)
+        cmbGender.Name = "cmbGender"
+        cmbGender.Size = New Size(229, 28)
+        cmbGender.TabIndex = 16
         ' 
         ' Label7
         ' 
@@ -163,12 +165,12 @@ Partial Class Form3
         Label3.TabIndex = 17
         Label3.Text = "Tinggi Badan"
         ' 
-        ' TextBox3
+        ' txtHeight
         ' 
-        TextBox3.Location = New Point(138, 92)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(229, 27)
-        TextBox3.TabIndex = 15
+        txtHeight.Location = New Point(138, 92)
+        txtHeight.Name = "txtHeight"
+        txtHeight.Size = New Size(229, 27)
+        txtHeight.TabIndex = 15
         ' 
         ' Label2
         ' 
@@ -179,19 +181,19 @@ Partial Class Form3
         Label2.TabIndex = 14
         Label2.Text = "Berat Badan"
         ' 
-        ' TextBox2
+        ' txtWeight
         ' 
-        TextBox2.Location = New Point(138, 59)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(229, 27)
-        TextBox2.TabIndex = 13
+        txtWeight.Location = New Point(138, 59)
+        txtWeight.Name = "txtWeight"
+        txtWeight.Size = New Size(229, 27)
+        txtWeight.TabIndex = 13
         ' 
-        ' TextBox1
+        ' txtAge
         ' 
-        TextBox1.Location = New Point(138, 26)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(211, 27)
-        TextBox1.TabIndex = 12
+        txtAge.Location = New Point(138, 26)
+        txtAge.Name = "txtAge"
+        txtAge.Size = New Size(211, 27)
+        txtAge.TabIndex = 12
         ' 
         ' Label1
         ' 
@@ -202,45 +204,57 @@ Partial Class Form3
         Label1.TabIndex = 11
         Label1.Text = "Umur"
         ' 
-        ' Button2
+        ' listResults
         ' 
-        Button2.BackColor = Color.Red
-        Button2.FlatStyle = FlatStyle.Popup
-        Button2.ForeColor = SystemColors.ButtonFace
-        Button2.Location = New Point(218, 299)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(94, 29)
-        Button2.TabIndex = 4
-        Button2.Text = "Reset"
-        Button2.UseVisualStyleBackColor = False
+        listResults.FormattingEnabled = True
+        listResults.Location = New Point(12, 352)
+        listResults.Name = "listResults"
+        listResults.Size = New Size(415, 104)
+        listResults.TabIndex = 6
         ' 
-        ' Button1
+        ' btnPrint
         ' 
-        Button1.BackColor = Color.Lime
-        Button1.FlatStyle = FlatStyle.Popup
-        Button1.Location = New Point(118, 299)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(94, 29)
-        Button1.TabIndex = 3
-        Button1.Text = "Hitung"
-        Button1.UseVisualStyleBackColor = False
+        btnPrint.BackColor = SystemColors.ButtonFace
+        btnPrint.FlatStyle = FlatStyle.Popup
+        btnPrint.Location = New Point(268, 298)
+        btnPrint.Name = "btnPrint"
+        btnPrint.Size = New Size(94, 29)
+        btnPrint.TabIndex = 13
+        btnPrint.Text = "Cetak"
+        btnPrint.UseVisualStyleBackColor = False
         ' 
-        ' ListView1
+        ' btnReset
         ' 
-        ListView1.Location = New Point(12, 352)
-        ListView1.Name = "ListView1"
-        ListView1.Size = New Size(415, 86)
-        ListView1.TabIndex = 5
-        ListView1.UseCompatibleStateImageBehavior = False
+        btnReset.BackColor = Color.Red
+        btnReset.FlatStyle = FlatStyle.Popup
+        btnReset.ForeColor = SystemColors.ButtonFace
+        btnReset.Location = New Point(168, 298)
+        btnReset.Name = "btnReset"
+        btnReset.Size = New Size(94, 29)
+        btnReset.TabIndex = 12
+        btnReset.Text = "Reset"
+        btnReset.UseVisualStyleBackColor = False
+        ' 
+        ' btnCount
+        ' 
+        btnCount.BackColor = Color.Lime
+        btnCount.FlatStyle = FlatStyle.Popup
+        btnCount.Location = New Point(68, 298)
+        btnCount.Name = "btnCount"
+        btnCount.Size = New Size(94, 29)
+        btnCount.TabIndex = 11
+        btnCount.Text = "Hitung"
+        btnCount.UseVisualStyleBackColor = False
         ' 
         ' Form3
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(439, 450)
-        Controls.Add(ListView1)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
+        ClientSize = New Size(439, 469)
+        Controls.Add(btnPrint)
+        Controls.Add(btnReset)
+        Controls.Add(btnCount)
+        Controls.Add(listResults)
         Controls.Add(GroupBox1)
         Name = "Form3"
         Text = "Kalkulator Kalori"
@@ -250,22 +264,25 @@ Partial Class Form3
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cmbGender As ComboBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txtHeight As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtWeight As TextBox
+    Friend WithEvents txtAge As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents radioHigh As RadioButton
+    Friend WithEvents radioMedium As RadioButton
+    Friend WithEvents radioLow As RadioButton
     Friend WithEvents Label8 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents ListView1 As ListView
+    Friend WithEvents listResults As ListBox
+    Friend WithEvents btnPrint As Button
+    Friend WithEvents btnReset As Button
+    Friend WithEvents btnCount As Button
 End Class

@@ -90,7 +90,7 @@ Partial Class Form5
         Label33 = New Label()
         Panel34 = New Panel()
         Label34 = New Label()
-        Button1 = New Button()
+        btnPrint = New Button()
         Label35 = New Label()
         Panel2.SuspendLayout()
         Panel3.SuspendLayout()
@@ -751,14 +751,14 @@ Partial Class Form5
         Label34.TabIndex = 5
         Label34.Text = "dr. Anton Wijaya, Sp.N"
         ' 
-        ' Button1
+        ' btnPrint
         ' 
-        Button1.Location = New Point(657, 12)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(206, 45)
-        Button1.TabIndex = 18
-        Button1.Text = "Cetak Jadwal"
-        Button1.UseVisualStyleBackColor = True
+        btnPrint.Location = New Point(657, 12)
+        btnPrint.Name = "btnPrint"
+        btnPrint.Size = New Size(206, 45)
+        btnPrint.TabIndex = 18
+        btnPrint.Text = "Cetak Jadwal"
+        btnPrint.UseVisualStyleBackColor = True
         ' 
         ' Label35
         ' 
@@ -777,7 +777,7 @@ Partial Class Form5
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(875, 744)
         Controls.Add(Label35)
-        Controls.Add(Button1)
+        Controls.Add(btnPrint)
         Controls.Add(Panel31)
         Controls.Add(Panel32)
         Controls.Add(Panel27)
@@ -953,6 +953,6 @@ Partial Class Form5
     Friend WithEvents Label33 As Label
     Friend WithEvents Panel34 As Panel
     Friend WithEvents Label34 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnPrint As Button
     Friend WithEvents Label35 As Label
 End Class
