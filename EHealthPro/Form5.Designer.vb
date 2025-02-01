@@ -757,7 +757,7 @@ Partial Class Form5
         btnPrint.Name = "btnPrint"
         btnPrint.Size = New Size(206, 45)
         btnPrint.TabIndex = 18
-        btnPrint.Text = "Cetak Jadwal"
+        btnPrint.Text = "Cetak PDF"
         btnPrint.UseVisualStyleBackColor = True
         ' 
         ' Label35
@@ -766,9 +766,9 @@ Partial Class Form5
         Label35.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label35.Location = New Point(12, 19)
         Label35.Name = "Label35"
-        Label35.Size = New Size(329, 31)
+        Label35.Size = New Size(516, 31)
         Label35.TabIndex = 19
-        Label35.Text = "Jadwal Praktik Dokter Umum"
+        Label35.Text = "Jadwal Praktik Dokter Umum Medicare+ Clinic" & vbCrLf
         Label35.TextAlign = ContentAlignment.TopCenter
         ' 
         ' Form5
