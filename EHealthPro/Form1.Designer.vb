@@ -22,26 +22,26 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Button1 = New Button()
+        btnSchedule = New Button()
         Label1 = New Label()
         GroupBox1 = New GroupBox()
-        Button4 = New Button()
-        Button3 = New Button()
-        Button2 = New Button()
-        Button5 = New Button()
+        btnHydration = New Button()
+        btnCalories = New Button()
+        btnBMI = New Button()
+        btnRegistration = New Button()
         GroupBox1.SuspendLayout()
         SuspendLayout()
         ' 
-        ' Button1
+        ' btnSchedule
         ' 
-        Button1.BackColor = SystemColors.ActiveCaption
-        Button1.FlatStyle = FlatStyle.Popup
-        Button1.Location = New Point(94, 172)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(158, 44)
-        Button1.TabIndex = 0
-        Button1.Text = "Jadwal Praktik"
-        Button1.UseVisualStyleBackColor = False
+        btnSchedule.BackColor = SystemColors.ActiveCaption
+        btnSchedule.FlatStyle = FlatStyle.Popup
+        btnSchedule.Location = New Point(94, 172)
+        btnSchedule.Name = "btnSchedule"
+        btnSchedule.Size = New Size(158, 44)
+        btnSchedule.TabIndex = 0
+        btnSchedule.Text = "Jadwal Praktik"
+        btnSchedule.UseVisualStyleBackColor = False
         ' 
         ' Label1
         ' 
@@ -56,9 +56,9 @@ Partial Class Form1
         ' 
         ' GroupBox1
         ' 
-        GroupBox1.Controls.Add(Button4)
-        GroupBox1.Controls.Add(Button3)
-        GroupBox1.Controls.Add(Button2)
+        GroupBox1.Controls.Add(btnHydration)
+        GroupBox1.Controls.Add(btnCalories)
+        GroupBox1.Controls.Add(btnBMI)
         GroupBox1.Location = New Point(314, 94)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Size = New Size(282, 270)
@@ -67,56 +67,56 @@ Partial Class Form1
         GroupBox1.Text = "Kalkulator Kesehatan"
         GroupBox1.UseWaitCursor = True
         ' 
-        ' Button4
+        ' btnHydration
         ' 
-        Button4.Location = New Point(56, 184)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(167, 44)
-        Button4.TabIndex = 5
-        Button4.Text = "Kalkulator Air MInum" & vbCrLf
-        Button4.UseVisualStyleBackColor = True
-        Button4.UseWaitCursor = True
+        btnHydration.Location = New Point(56, 184)
+        btnHydration.Name = "btnHydration"
+        btnHydration.Size = New Size(167, 44)
+        btnHydration.TabIndex = 5
+        btnHydration.Text = "Kalkulator Air MInum" & vbCrLf
+        btnHydration.UseVisualStyleBackColor = True
+        btnHydration.UseWaitCursor = True
         ' 
-        ' Button3
+        ' btnCalories
         ' 
-        Button3.Location = New Point(56, 113)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(167, 44)
-        Button3.TabIndex = 4
-        Button3.Text = "Kalkulator Kalori"
-        Button3.UseVisualStyleBackColor = True
-        Button3.UseWaitCursor = True
+        btnCalories.Location = New Point(56, 113)
+        btnCalories.Name = "btnCalories"
+        btnCalories.Size = New Size(167, 44)
+        btnCalories.TabIndex = 4
+        btnCalories.Text = "Kalkulator Kalori"
+        btnCalories.UseVisualStyleBackColor = True
+        btnCalories.UseWaitCursor = True
         ' 
-        ' Button2
+        ' btnBMI
         ' 
-        Button2.Location = New Point(56, 47)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(167, 44)
-        Button2.TabIndex = 3
-        Button2.Text = "Kalkulator BMI "
-        Button2.UseVisualStyleBackColor = True
-        Button2.UseWaitCursor = True
+        btnBMI.Location = New Point(56, 47)
+        btnBMI.Name = "btnBMI"
+        btnBMI.Size = New Size(167, 44)
+        btnBMI.TabIndex = 3
+        btnBMI.Text = "Kalkulator BMI "
+        btnBMI.UseVisualStyleBackColor = True
+        btnBMI.UseWaitCursor = True
         ' 
-        ' Button5
+        ' btnRegistration
         ' 
-        Button5.BackColor = SystemColors.ActiveCaption
-        Button5.FlatStyle = FlatStyle.Popup
-        Button5.Location = New Point(94, 239)
-        Button5.Name = "Button5"
-        Button5.Size = New Size(158, 44)
-        Button5.TabIndex = 3
-        Button5.Text = "Pendaftaran Pasien"
-        Button5.UseVisualStyleBackColor = False
+        btnRegistration.BackColor = SystemColors.ActiveCaption
+        btnRegistration.FlatStyle = FlatStyle.Popup
+        btnRegistration.Location = New Point(94, 239)
+        btnRegistration.Name = "btnRegistration"
+        btnRegistration.Size = New Size(158, 44)
+        btnRegistration.TabIndex = 3
+        btnRegistration.Text = "Pendaftaran Pasien"
+        btnRegistration.UseVisualStyleBackColor = False
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(633, 403)
-        Controls.Add(Button5)
+        Controls.Add(btnRegistration)
         Controls.Add(GroupBox1)
         Controls.Add(Label1)
-        Controls.Add(Button1)
+        Controls.Add(btnSchedule)
         Name = "Form1"
         Text = "Menu"
         GroupBox1.ResumeLayout(False)
@@ -124,12 +124,12 @@ Partial Class Form1
         PerformLayout()
     End Sub
 
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnSchedule As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button5 As Button
+    Friend WithEvents btnHydration As Button
+    Friend WithEvents btnCalories As Button
+    Friend WithEvents btnBMI As Button
+    Friend WithEvents btnRegistration As Button
 
 End Class
